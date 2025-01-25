@@ -32,6 +32,7 @@ classifiers = [
 ]
 dependencies = [
    "django>=3.2.14",
+   "cookiecutter>=2.6.0"
 ]
 
 [project.optional-dependencies]
@@ -56,6 +57,7 @@ Tracker = "https://github.com/rsevs3/django-tailwind-4/issues"
 
 [tool.setuptools.packages.find]
 include = ["tailwind*"]
+where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
